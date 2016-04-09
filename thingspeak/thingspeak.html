@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ThingspeakSendSimple',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            writekey: {value:""},
+            fieldid: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "file.png",
+        label: function() {
+            return this.name||"lower-case";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ThingspeakSendSimple">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-writekey"><i class="icon-tag"></i> Write Key</label>
+        <input type="text" id="node-input-writekey" placeholder="writekey">
+    </div>
+    <div class="form-row">
+        <label for="node-input-fieldid"><i class="icon-tag"></i> Field ID</label>
+        <input type="text" id="node-input-fieldid" placeholder="fieldid">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ThingspeakSendSimple">
+    <p>A simple node that sends the payload to thinkerspeak.com with http get</p>
+</script>
