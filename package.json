@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-thingspeak",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple node for node-red which allow to send data to thingspeak",
   "dependencies": {},
   "keywords": ["node-red"],
