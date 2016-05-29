@@ -11,15 +11,15 @@
         outputs:0,
         icon: "file.png",
         label: function() {
-            return this.name||"lower-case";
-        }
+        	return this.name||"Send to thingspeak.com";
+	}
     });
 </script>
 
 <script type="text/x-red" data-template-name="ThingspeakSendSimple">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-        <input type="text" id="node-input-name" placeholder="Name">
+        <input type="text" id="node-input-name" placeholder="Send to thingspeak.com">
     </div>
     <div class="form-row">
         <label for="node-input-writekey"><i class="icon-tag"></i> Write Key</label>
