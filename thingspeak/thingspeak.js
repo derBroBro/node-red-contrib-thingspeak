@@ -14,7 +14,9 @@ module.exports = function(RED) {
             node.error("Got "+response.statusCode);
           }
         }
-      );
+      ).on('error', function(e) {
+          node.error("Error posting to ThingSpeak: " + e);
+      });
     });
   }
   RED.nodes.registerType("ThingspeakSendSimple", ThingspeakSendSimple);
